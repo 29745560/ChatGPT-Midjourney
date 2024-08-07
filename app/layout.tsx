@@ -10,10 +10,10 @@ import { GoogleTagManager } from "@next/third-parties/google";
 const serverConfig = getServerSideConfig();
 
 export const metadata: Metadata = {
-  title: "ChatGPT-Midjourney",
-  description: "Your personal ChatGPT Chat Bot.",
+  title: "RONG AI",
+  description: "白水人工智能实验室",
   appleWebApp: {
-    title: "ChatGPT-Midjourney",
+    title: "RONG AI",
     statusBarStyle: "default",
   },
 };
