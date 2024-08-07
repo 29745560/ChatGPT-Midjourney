@@ -32,8 +32,9 @@ export const imagineParams = [
     name: Locale.MjPanel.ModelVersion,
     value: "version",
     type: "select",
-    default: "6",
+    default: "6.1",
     options: [
+      { name: "V6.1", value: "6.1" },
       { name: "V6", value: "6" },
       { name: "V5.2", value: "5.2", support: ["mj"] },
       { name: "V5.1", value: "5.1", support: ["mj"] },

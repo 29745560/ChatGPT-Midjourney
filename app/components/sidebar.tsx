@@ -4,13 +4,11 @@ import styles from "./home.module.scss";
 
 import { IconButton } from "./button";
 import SettingsIcon from "../icons/settings.svg";
-import GithubIcon from "../icons/github.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
 import AddIcon from "../icons/add.svg";
 import DeleteIcon from "../icons/delete.svg";
 import MaskIcon from "../icons/mask.svg";
 import DragIcon from "../icons/drag.svg";
-import DiscoveryIcon from "../icons/discovery.svg";
 import PaintIcon from "../icons/paint.svg";
 
 import Locale from "../locales";
@@ -24,7 +22,6 @@ import {
   NARROW_SIDEBAR_WIDTH,
   Path,
   PLUGINS,
-  REPO_URL,
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -224,8 +221,8 @@ export function SideBar(props: { className?: string }) {
       {...props}
     >
       <SideBarHeader
-        title="ChatGPT-Midjourney"
-        subTitle="Build your own AI assistant."
+        title="RONG AI"
+        subTitle="白水人工智能实验室"
         logo={<ChatGptIcon />}
       >
         <div className={styles["sidebar-header-bar"]}>
@@ -299,11 +296,6 @@ export function SideBar(props: { className?: string }) {
               <Link to={Path.Settings}>
                 <IconButton icon={<SettingsIcon />} shadow />
               </Link>
-            </div>
-            <div className={styles["sidebar-action"]}>
-              <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
-                <IconButton icon={<GithubIcon />} shadow />
-              </a>
             </div>
           </>
         }

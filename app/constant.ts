@@ -388,7 +388,4 @@ export const internalAllowedWebDavEndpoints = [
   "https://app.koofr.net/dav/Koofr",
 ];
 
-export const PLUGINS = [
-  { name: "Midjourney", path: Path.Mj, icon: "🎨" },
-  { name: "Stable Diffusion", path: Path.Sd, icon: "🎨" },
-];
+export const PLUGINS = [{ name: "Midjourney", path: Path.Mj, icon: "🎨" }];
