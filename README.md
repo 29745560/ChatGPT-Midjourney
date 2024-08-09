@@ -19,7 +19,8 @@
 
 ### 已支持
 - [x] 原`ChatGPT-Next-Web`所有功能
-- [x] Midjourney `Imgine` `Upscale`  `Variation`  `Zoom`  `Vary`  `Pan`  `Reroll`  `Describe`  `Blend` 等众多操作，完美支持 Midjourney 图像生成之后的任何操作（暂除Vary Region以外）
+- [x] Midjourney `Imgine` `Upscale`  `Variation`  `Zoom`  `Vary`  `Pan`  `Reroll`  `Describe`  `Blend` 等众多操作，完美支持 Midjourney 图像生成之后的任何操作
+- [x] Midjourney 区域重绘（Vary Region）支持
 - [x] Midjourney 参考图片
 - [x] 绘图进度百分比、实时图像显示
 - [x] 支持 Stable Image Ultra
@@ -58,7 +59,7 @@ docker run -d -p 3000:3000 \
    -e BASE_URL="https://api.openai.com" \
    -e MJ_PROXY_URL="" \
    -e MJ_PROXY_KEY="" \
-   licoy/chatgpt-midjourney:v3.3.2
+   licoy/chatgpt-midjourney:v3.4.0
 ```
 ### Vercel
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FLicoy%2FChatGPT-Midjourney&env=OPENAI_API_KEY&env=MJ_PROXY_URL&env=MJ_PROXY_KEY&env=CODE&project-name=chatgpt-midjourney&repository-name=ChatGPT-Midjourney)
@@ -81,6 +82,8 @@ npm run start // #或者开发模式启动： npm run dev
 ## 截图
 ### Midjourney生成主界面
 ![step-1](./docs/images/step-2.png)
+### Midjourney区域重绘
+![step-1](./docs/images/step-5.png)
 ### StabilityAI生成主界面
 ![step-1](./docs/images/step-3.png)
 ### 自定义配置接口

@@ -19,7 +19,8 @@ One-click to own your own ChatGPT+StabilityAI+Midjourney web service (based on [
 
 ### Already supported
 - [x] All functions of the original `ChatGPT-Next-Web`
-- [x] Midjourney `Imgine` `Upscale` `Variation` `Zoom` `Vary` `Pan` `Reroll` `Describe` `Blend` and many other operations, perfect support for any operation after Midjourney image generation (except Vary Region for the time being)
+- [x] Midjourney `Imgine` `Upscale` `Variation` `Zoom` `Vary` `Pan` `Reroll` `Describe` `Blend` and many other operations, perfect support for any operation after Midjourney image generation
+- [x] Midjourney Vary Region Support
 - [x] Midjourney reference image
 - [x] Drawing progress percentage, real-time image display
 - [x] Support Stable Image Ultra
@@ -57,7 +58,7 @@ docker run -d -p 3000:3000 \
 -e OPENAI_API_KEY="sk-xxx" \
 -e BASE_URL="https://api.openai.com" \
 -e MJ_PROXY_URL="" \
--e MJ_PROXY_KEY="" \ licoy/chatgpt-midjourney:v3.3.2
+-e MJ_PROXY_KEY="" \ licoy/chatgpt-midjourney:v3.4.0
 ```
 ### Vercel
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FLicoy%2FChatGPT-Midjourney&env=OPENAI_API_KEY&env=MJ_PROXY_URL&env=MJ_PROXY_KEY&env=CODE&project-name=chatgpt-midjourney&repository-name=ChatGPT-Midjourney)
@@ -81,6 +82,8 @@ After deployment, click the painting in the upper left corner and select the pai
 ## Screenshots
 ### Midjourney generates the main interface
 ![step-1](./docs/images/step-2-en.png)
+### Midjourney Vary Region
+![step-1](./docs/images/step-5-en.png)
 ### StabilityAI generates the main interface
 ![step-1](./docs/images/step-3-en.png)
 ### Custom configuration interface
